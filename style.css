@@ -1,0 +1,111 @@
+*{
+    margin: 5;
+    padding: 0;
+}
+body {
+    text-align: center;
+    background: linear-gradient(to left, #F5F3EC, #D2CDB9, #92A378);
+}
+.container{
+    height: 70vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.game{
+    height:60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2vmin;
+}
+.box{
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1.5rem;
+    border:none;
+    box-shadow: 0.0.1rem rgba(0,0,0,0.3);
+    font-size: 6vmin;
+    background-color:lightyellow;
+    color: olive;
+}
+.reset{
+    padding: 1rem;
+    font-size: 1.25rem;
+    border-radius: 1.25rem;
+    background-color: olive;
+    color: beige;
+    border: none;
+}
+.New{
+    padding: 1rem;
+    font-size: 0.8rem;
+    border-radius: 1.25rem;
+    background-color: olive;
+    color: beige;
+    border: none;
+}
+.message{
+    color: darkolivegreen;
+    font-size: 5vmin;
+    padding: 1rem;
+}
+.message-container{
+    height: 100vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.hide{
+    display:none;
+}
+.theme{
+    height: 40px;
+    width: 100px;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    background-image:url("day-and-night.png");
+    background-size: contain;
+    background-position: center; 
+    background-repeat: no-repeat;
+    border:none;
+    font-size: 1.25rem;
+    background-color: lightyellow;
+}
+body.dark{
+    background: linear-gradient(to left, #2f2f2f, #1e1e1e, #121212);
+    color:white;
+}
+body.dark .box{
+    background-color: grey;
+    color: white;
+}
+body.dark .reset{
+    background-color: grey;
+    color: white;
+}
+body.dark .New{
+    background-color: grey;
+    color: white;
+}
+body.dark .message{
+    color: white;
+}
+
+.computer{
+    padding:0.4rem;
+    border-radius: 0.75rem;
+    border:none;
+    background-color:olive;
+    color:white;
+    font-size: 0.9rem;
+}
+body.dark .computer{
+    background-color: grey;
+}
+
+
