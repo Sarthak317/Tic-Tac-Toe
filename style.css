@@ -1,10 +1,18 @@
+@font-face {
+    font-family: new1;
+    src: url('FontsFree-Net-Fenway.ttf')
+}
+h1{
+    font-family: new1;
+    color:#D6EF84;
+}
 *{
     margin: 5;
     padding: 0;
 }
 body {
     text-align: center;
-    background: linear-gradient(to left, #F5F3EC, #D2CDB9, #92A378);
+    background-color: #40554B;
 }
 .container{
     height: 70vh;
@@ -28,8 +36,8 @@ body {
     border:none;
     box-shadow: 0.0.1rem rgba(0,0,0,0.3);
     font-size: 6vmin;
-    background-color:lightyellow;
-    color: olive;
+    background-color:#D6EF84;
+    color: #40554B
 }
 .reset{
     padding: 1rem;
@@ -48,7 +56,7 @@ body {
     border: none;
 }
 .message{
-    color: darkolivegreen;
+    color: #D6EF84;
     font-size: 5vmin;
     padding: 1rem;
 }
@@ -106,6 +114,9 @@ body.dark .message{
 }
 body.dark .computer{
     background-color: grey;
+}
+body.dark h1{
+    color: white;
 }
 
 
