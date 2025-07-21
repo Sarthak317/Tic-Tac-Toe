@@ -8,7 +8,7 @@ h1{
 }
 *{
     margin: 5;
-    padding: 0;
+    padding: 1px;
 }
 body {
     text-align: center;
@@ -46,6 +46,30 @@ body {
     background-color: olive;
     color: beige;
     border: none;
+    box-shadow: 0 0 10px olive, 0 0 20px olive,0 0 30px olive;
+    cursor:pointer;
+    position: relative;
+    z-index: 0;
+}
+.reset::after{
+    font-size: 1.25rem;
+    border-radius: 1.25rem;
+    content: "";
+    height: 100%;
+    width: 0px;
+    background-color: black;
+    top: 0%;
+    left: 0%;
+    position: absolute;
+    transition: 0.3s ease-out;
+    z-index: -1;
+
+}
+.reset:hover::after{
+    width: 100%
+}
+.reset:hover{
+    box-shadow: 0 0 10px olive, 0 0 20px olive,0 0 30px olive;
 }
 .New{
     padding: 1rem;
@@ -54,6 +78,13 @@ body {
     background-color: olive;
     color: beige;
     border: none;
+    box-shadow: 0 0 10px #121212,0 0 20px #121212;
+    cursor:pointer;
+    transition: 0.3s ease;
+}
+.New:hover{
+     background-color: black;
+    box-shadow: 0 0 10px olive, 0 0 20px olive,0 0 30px olive;
 }
 .message{
     color: #D6EF84;
@@ -83,6 +114,12 @@ body {
     border:none;
     font-size: 1.25rem;
     background-color: lightyellow;
+    box-shadow: 0 0 5px #121212,0 0 10px #121212;
+    cursor:pointer;
+
+}
+.theme:hover{
+    box-shadow: 0 0 10px white,0 0 20px white,0 0 30px white;
 }
 body.dark{
     background: linear-gradient(to left, #2f2f2f, #1e1e1e, #121212);
@@ -103,6 +140,12 @@ body.dark .New{
 body.dark .message{
     color: white;
 }
+body.dark .computer{
+    background-color: grey;
+}
+body.dark h1{
+    color: white;
+}
 
 .computer{
     padding:0.4rem;
@@ -111,12 +154,32 @@ body.dark .message{
     background-color:olive;
     color:white;
     font-size: 0.9rem;
+    box-shadow: 0 0 10px olive, 0 0 20px olive,0 0 30px olive;
+    cursor: pointer;
+    position: relative;
+    z-index:0;
 }
-body.dark .computer{
-    background-color: grey;
+
+.computer:hover{
+    box-shadow: 0 0 10px olive,0 0 20px olive,0 0 30px olive;
+
 }
-body.dark h1{
-    color: white;
+.computer::after{
+    border-radius: 0.75rem;
+    border:none;
+    content: " ";
+    height: 100%;
+    background-color: #121212;
+    top: 0%;
+    position: absolute;
+    width: 0%;
+    left: 0%;
+    z-index: -1;
+    transition: 0.3s ease-out;
+    
+}
+.computer:hover::after{
+    width: 100%;
 }
 
 
