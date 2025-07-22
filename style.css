@@ -39,6 +39,9 @@ body {
     background-color:#D6EF84;
     color: #40554B
 }
+.box:hover{
+ box-shadow: 0 0 10px white,0 0 20px white,0 0 30px white;
+}
 .reset{
     padding: 1rem;
     font-size: 1.25rem;
